@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip calculator app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./tip-calculator-app-main/images/logo.svg" alt="">
+        </div>
+        <div class="container-items">
+            <div class="item-1">
+                <div class="bill">
+                    <p>Bill</p>
+                    <form action="#" name="myForm1">
+                    <input name="amount" type="text" placeholder="$                   0">
+                    </form>
+                </div>
+                <div class="select">
+                    <p>Select Tips %</p>
+                    <div class="tip-percent">
+                    <button id="5" class="tip">5%</button>
+                    <button id="10" class="tip">10%</button>
+                    <button id="15" class="tip">15%</button>
+                    <button id="25" class="tip">25%</button>
+                    <button id="50" class="tip">50%</button>
+                    <form action="#" name="myForm3">
+                    <input name="custom" class="tip tip-1" type="text" placeholder="Custom">
+                    </form>    
+                </div>
+                </div>
+                <div class="people">
+                    <div class="error">
+                    <p>Number of people</p>
+                    <p id="message"></p>
+                    </div>
+                    <form action="#" name="myForm2">
+                    <input name="people" type="text" placeholder="0">
+                    </form>
+                </div>
+            </div>
+
+            <div class="item-2">
+                <div class="amount">
+                    <p>Tip Amount <br><span>/ person</span></p>
+                    <p class="numbers" id="amount" >$0.00</p>
+                </div>
+                    <div class="total">
+                    <p>Total <br><span> / person</span></p>
+                    <p class="numbers" id="total" >$0.00</p>
+                    </div>
+
+                    <button id="equal">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
